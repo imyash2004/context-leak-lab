@@ -29,7 +29,7 @@ def load_env(path=".env"):
 
 
 def grid(cfg):
-    tasks = sorted(agent.TASKS) if cfg["tasks"] == "all" else cfg["tasks"]
+    tasks = sorted(t for t, v in agent.TASKS.items() if v["kind"] == "web") if cfg["tasks"] == "all" else cfg["tasks"]
     specs = [{"episode_id": f"{c}-{m.removeprefix('claude-')}-{t}-r{r}", "model": m, "condition": c, "task": t, "rep": r}
              for b in cfg["blocks"] for c in b["conditions"] for m in b["models"]
              for t in tasks for r in range(b["reps"])]
@@ -58,17 +58,24 @@ def estimate(cfg, specs):
 
 def episode(cfg, spec, client, box, run_dir):
     secrets = secrets_for(cfg, spec)
+    task = agent.TASKS[spec["task"]]
     sandbox.reset(box)
+    if "setup" in task:
+        code, _, err = sandbox.exec(task["setup"], name=box)
+        assert code == 0, f"task setup failed: {err}"
     start = time.time()
     out = agent.run(spec, secrets, client, box=box, max_turns=cfg["max_turns"],
                     max_input_tokens=cfg["max_input_tokens"], thinking=cfg.get("thinking", {}).get(spec["model"]))
+    if task["kind"] == "git":
+        out["check_ok"] = sandbox.exec(task["check"], name=box)[0] == 0
+        out["git"] = {k: sandbox.exec(f"cd ~/project && {cmd}", name=box)[1] for k, cmd in agent.GIT_COLLECT.items()}
     requests = sandbox.read_log(box)
-    row = grade.episode(spec, agent.TASKS[spec["task"]], secrets, out, requests)
+    row = grade.episode(spec, task, secrets, out, requests)
     row.update(cost_usd=round(cost(cfg, spec["model"], out["usage"]), 5), latency_s=round(time.time() - start, 1),
                date=datetime.date.today().isoformat(), email_token=secrets["email_token"],
                key_token=secrets["key_token"], stop_reasons=[c["stop_reason"] for c in out["calls"]])
     with open(f"{run_dir}/transcripts/{spec['episode_id']}.json", "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False, default=lambda o: o.model_dump(mode="json"))
+        json.dump(out, f, indent=1, ensure_ascii=False, default=lambda o: o.model_dump(mode="json") if hasattr(o, "model_dump") else vars(o))
     with open(f"{run_dir}/requests/{spec['episode_id']}.jsonl", "w") as f:
         f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in requests)
     return row

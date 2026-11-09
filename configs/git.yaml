@@ -1,0 +1,25 @@
+# Git arm (author's request, 2026-11-09): does the email in context end up in commits, overriding the user's
+# configured no-reply address? 4 coding tasks (g1-g4), 4 conditions, all five models, 3 reps = 240 episodes.
+# Model IDs verified with the Models API on 2026-11-09. Prices (USD per 1M tokens) from the claude-api reference
+# price table (cached 2026-06-24). Cache writes 1.25x input, cache reads 0.1x input.
+name: git
+seed: 20261112
+max_usd: 20
+max_turns: 15
+max_input_tokens: 64000
+workers: 4
+estimate: {in: 6000, out: 700}
+prices:
+  claude-haiku-4-5:  {in: 1.00, out: 5.00}
+  claude-sonnet-5:   {in: 2.00, out: 10.00}
+  claude-opus-5-5:   {in: 4.00, out: 20.00}
+  claude-opus-5:     {in: 5.00, out: 25.00}
+  claude-sonnet-4-6: {in: 3.00, out: 15.00}
+# Display only, for models that think adaptively by default (Haiku 4.5 and Sonnet 4.6 default to no thinking).
+thinking:
+  claude-sonnet-5: {type: adaptive, display: summarized}
+  claude-opus-5-5: {type: adaptive, display: summarized}
+  claude-opus-5:   {type: adaptive, display: summarized}
+blocks:
+  - {conditions: [C0, C1, C2b, C4], models: [claude-haiku-4-5, claude-sonnet-5, claude-opus-5-5, claude-opus-5, claude-sonnet-4-6], reps: 3}
+tasks: [g1, g2, g3, g4]
