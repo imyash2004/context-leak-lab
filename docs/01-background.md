@@ -12,7 +12,9 @@ Facts below are as reported by the sources listed at the end, as of 2026-11-09. 
 
 | Date | Event |
 | --- | --- |
-| July 2026 | Issue #81138, which commenters later said described the same behaviour |
+| 7 Jun 2026 | Issue #66079: since ~v2.1.165, generated commits carry a `Co-authored-by` trailer with the user's account email, even when the git author is a no-reply address |
+| 25 Jul 2026 | Issue #81138: the account email is injected into the model's system prompt (Claude Code 2.1.220); the model passed `git -c user.email=<private address>` on ten commits, overriding a configured no-reply identity. Commenters later said it described the same behaviour as the User-Agent reports |
+| 31 Jul 2026 | Aident write-up "Claude Code Using Your Personal Email? Lock Down Git Identity", citing #81138 |
 | 13 Oct 2026 | Issue #101659: a research subagent sent the user's email to Liquipedia (403 returned) |
 | 15 Oct 2026 | Issue #102577: the email went to Wikipedia in four search requests |
 | 3 Nov 2026 | Claude Code 2.1.317 adds `cc-plugin-privacy`, a built-in guard |
@@ -27,23 +29,27 @@ Facts below are as reported by the sources listed at the end, as of 2026-11-09. 
 
 **Open questions this lab can answer (in our own harness):** how often models do this; whether site pressure drives it; whether instructions, guards or removal fix it; what channels leaks use; and what removal costs.
 
-## 2. The same week: "Don't ask again" wrote secrets into public repos
+## 2. Earlier: the email also went into git commits
+
+*Added after the runs (2026-11-09).* Issue #81138 (25 Jul 2026) reported that, with the account email in a `userEmail` context block (Claude Code 2.1.220), the model committed with `git -c user.email=<private address>` on ten commits, overriding the no-reply identity configured in both the repository and the global git config. Aident's write-up (31 Jul 2026) summarises it and gives mitigations (pin a repo no-reply identity, make git refuse guessed identities, add a pre-commit identity check). A separate issue, #66079 (7 Jun 2026), reported a `Co-authored-by` trailer carrying the account email in generated commits. This lab's git arm (REPORT.md §7) tests the first behaviour.
+
+## 3. The same week: "Don't ask again" wrote secrets into public repos
 
 Apiiro reported (via The Hacker News, 7 Nov 2026) that approving a command with "Yes, and don't ask again" writes an `allow` rule to `.claude/settings.local.json`, often as the exact command. If the command contained a password, the password is in the file. Apiiro found 1,122 public files with secrets across 103,617 repos; gitleaks and TruffleHog together missed 215. In 539 of 1,105 traced repos, a commit co-authored by Claude changed the file. The original report (issue #5544, Aug 2025) was auto-closed as "not planned" in January 2026.
 
 **Why it matters here:** a second example of private data leaving through the agent's own actions, not through an attacker.
 
-## 3. Wider context
+## 4. Wider context
 
 - Goldman Sachs restricted Claude Code and GitHub Copilot to its ~12,000 engineers (Bloomberg, 2 Nov 2026), citing productivity and risk management.
 - Northflank and Trigger.dev breaches: stolen environment variables were used to abuse customers' AI API tokens (early Nov 2026).
 - *Log-To-Leak* (arXiv 2610.36108): MCP prompt injection leaked user queries and tool responses with 62.6–100% success across 18 server/agent combinations.
 
-## 4. How this lab differs from the reports
+## 5. How this lab differs from the reports
 
 The reports describe incidents and counts in the wild. This lab runs a **controlled experiment**: same tasks, same sites, one factor changed at a time, deterministic grading, fake data. It measures models in a minimal harness that mimics the incident (identity in context, shell + fetch tools, sites that ask for contact info). It does not claim to measure the Claude Code product itself; an optional extension (docs/05, Step 9) checks the product directly under responsible disclosure.
 
-## 5. Glossary
+## 6. Glossary
 
 | Term | Meaning |
 | --- | --- |
@@ -62,4 +68,7 @@ The reports describe incidents and counts in the wild. This lab runs a **control
 - AI Chat Daily, "Anthropic to pull account emails from Claude Code context": https://www.aichatdaily.com/ai-security/anthropic-pull-account-emails-claude-code-context-after
 - DEV Community, "Claude Code's 'Don't Ask Again' Saved Secrets in 1,122 Public Files": https://dev.to/gabrielanhaia/claude-codes-dont-ask-again-saved-secrets-in-1122-public-files-215-beat-both-scanners-2pi4
 - AI Weekly, Goldman Sachs restricts Claude Code and Copilot: https://aiweekly.co/alerts/goldman-sachs-pulls-claude-code-and-github-copilot-from-traders-and-bankers
+- GitHub issue #81138, "Account email (PII) is injected into the model's system prompt without consent, disclosure, …" (opened 25 Jul 2026): https://github.com/anthropics/claude-code/issues/81138
+- GitHub issue #66079, "Co-authored-by trailer leaks the human user's account email even when git author.email is a noreply" (opened 7 Jun 2026): https://github.com/anthropics/claude-code/issues/66079
+- Aident, "Claude Code Using Your Personal Email? Lock Down Git Identity" (31 Jul 2026): https://aident.ai/blog/stop-claude-code-using-personal-git-email
 - This Week in Security, 8 Nov 2026: https://this.weekinsecurity.com/this-week-in-security-november-8-2026-edition/
