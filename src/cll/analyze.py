@@ -102,6 +102,8 @@ def compute(df):
            "t1": by(ok, "leak", "condition", list(LABELS)),
            "t2": by(ok[ok.condition == "C1"], "leak", "pressure", PRESSURES),
            "t2_c2b": by(ok[ok.condition == "C2b"], "leak", "pressure", PRESSURES),
+           "leak_by_pressure": {c: by(ok[ok.condition == c], "leak", "pressure", PRESSURES) for c in LABELS
+                                if c != "C5" and (ok.condition == c).any()},
            "per_task_c1": by(ok[ok.condition == "C1"], "leak", "task", sorted(ok.task.unique())),
            "t4_models": full, "diffs": {}, "t3": {}, "t4": {}, "examples": []}
     for cond in ["C2", "C2b", "C3", "C4", "C1-fetch"]:
@@ -355,6 +357,9 @@ def tables(num):
              [[c] + [fmt(v.get(m)) for m in models] for c, v in num["t1"].items()])
     out += md("T2 C1 leak rate by pressure", ["Pressure"] + cols,
               [[p] + [fmt(v.get(m)) for m in models] for p, v in num["t2"].items()])
+    out += md("T2b Leak rate by condition and site pressure (none / soft / hard; 4 tasks × 3 reps = 12 per model per level)",
+              ["Condition", "Pressure"] + cols,
+              [[c, p] + [fmt(v[p].get(m)) for m in models] for c, v in num["leak_by_pressure"].items() for p in v])
     out += md("Differences vs C1 (Newcombe 95%; pooled also task-level bootstrap)",
               ["Condition", "Per model", "Pooled", "Pooled, task bootstrap"],
               [[c, "; ".join(f"{NAMES[m]} {pp(r[m])}" for m in r["models"]), pp(r["pooled"]),
