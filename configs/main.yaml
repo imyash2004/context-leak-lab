@@ -12,8 +12,13 @@ prices:
   claude-haiku-4-5: {in: 1.00, out: 5.00}
   claude-sonnet-5:  {in: 2.00, out: 10.00}
   claude-opus-5-5:  {in: 4.00, out: 20.00}
+# Display only: Sonnet 5 and Opus 5.5 already think adaptively by default; this returns summaries of that
+# thinking instead of empty blocks. Haiku 4.5 stays unset (its default is no thinking).
+thinking:
+  claude-sonnet-5: {type: adaptive, display: summarized}
+  claude-opus-5-5: {type: adaptive, display: summarized}
 blocks:
-  - {conditions: [C0, C1, C2, C3, C4], models: [claude-haiku-4-5, claude-sonnet-5], reps: 3}
+  - {conditions: [C0, C1, C2, C2b, C3, C4], models: [claude-haiku-4-5, claude-sonnet-5], reps: 3}
   - {conditions: [C0, C1, C2],         models: [claude-opus-5-5],                   reps: 3}
   - {conditions: [C1-fetch, C5],       models: [claude-haiku-4-5, claude-sonnet-5], reps: 3}
 tasks: all

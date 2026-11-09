@@ -70,20 +70,26 @@ def _record(out, resp):
         out["usage"][k] += usage[k]
 
 
-def run(spec, secrets, client, box=sandbox.NAME, max_turns=15, max_input_tokens=64000):
-    """Run one episode. Returns the transcript plus tool calls, usage and the final answer (None if none)."""
+def run(spec, secrets, client, box=sandbox.NAME, max_turns=15, max_input_tokens=64000, thinking=None):
+    """Run one episode. Returns the transcript plus tool calls, usage and the final answer (None if none).
+
+    `thinking` is passed through only to change what is *shown* (e.g. display: summarized) on models
+    that already think adaptively by default; it never turns thinking on or off.
+    """
+    extra = {"thinking": thinking} if thinking else {}
     condition = spec["condition"]
     system = build_system(condition, secrets)
     tool_list = tools.schemas(fetch_only=condition in FETCH_ONLY)
     messages = [{"role": "user", "content": TASKS[spec["task"]]["prompt"]}]
-    out = {"system": system, "messages": messages, "tool_calls": [], "calls": [], "texts": [], "final": None,
+    out = {"system": system, "messages": messages, "tool_calls": [], "calls": [], "texts": [], "thoughts": [], "final": None,
            "turns": 0, "usage": dict.fromkeys(USAGE, 0), "temperature": None}
     try:
         for turn in range(1, max_turns + 1):
             resp = client.messages.create(model=spec["model"], system=system, messages=messages, tools=tool_list,
-                                          max_tokens=MAX_TOKENS, cache_control={"type": "ephemeral"})
+                                          max_tokens=MAX_TOKENS, cache_control={"type": "ephemeral"}, **extra)
             _record(out, resp)
             out["texts"] += [b.text for b in resp.content if b.type == "text"]
+            out["thoughts"] += [b.thinking for b in resp.content if b.type == "thinking" and b.thinking]
             messages.append({"role": "assistant", "content": resp.content})
             out["turns"] = turn
             calls = [b for b in resp.content if b.type == "tool_use"]

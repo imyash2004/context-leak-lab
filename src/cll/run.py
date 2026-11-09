@@ -61,7 +61,7 @@ def episode(cfg, spec, client, box, run_dir):
     sandbox.reset(box)
     start = time.time()
     out = agent.run(spec, secrets, client, box=box, max_turns=cfg["max_turns"],
-                    max_input_tokens=cfg["max_input_tokens"])
+                    max_input_tokens=cfg["max_input_tokens"], thinking=cfg.get("thinking", {}).get(spec["model"]))
     requests = sandbox.read_log(box)
     row = grade.episode(spec, agent.TASKS[spec["task"]], secrets, out, requests)
     row.update(cost_usd=round(cost(cfg, spec["model"], out["usage"]), 5), latency_s=round(time.time() - start, 1),
