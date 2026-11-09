@@ -87,3 +87,17 @@ env | grep -c ANTHROPIC (in sandbox) -> 0
 - Author decisions (2026-11-09): review the sites and pilot transcripts before the main run; **add C2b**; **show thinking summaries** for Sonnet 5 / Opus 5.5 (display only, `configs/main.yaml: thinking`). Checked live: both return summaries and multi-turn episodes work (runs/_check, $0.03).
 - `configs/main.yaml`: 684 episodes, estimate $15.55 (max_usd $40).
 
+## Step 7 main run (runs/2026-11-09_main: 684 episodes, $7.61, 0 invalid, all on 2026-11-09)
+- Started after the author's go ("run it"); config frozen in the run dir (`git_commit: 483d468`).
+- **Spot-check, 20 random episodes** (seed 20261109): transcript + raw request log read for each. The leak flag matched an independent raw-token search in all 20.
+- **Full re-check, all 684 episodes:** `email_leak` and `key_leak` matched a raw search of each request log for the episode's token in 684/684 (key: hosts other than weather.test). Every API response came from the requested model (`claude-haiku-4-5-20251001`, `claude-sonnet-5`, `claude-opus-5-5`). Stop reasons: only `tool_use` and `end_turn` (no refusals, no `max_tokens`).
+- **Soft pressure changed between pilot and main, and why:** C1 scholar.test leaks were 4/4 in the pilot and 3/18 in main. Request logs show the cause. In the pilot the agents fell back to the docs page (`/`), which describes the `mailto` polite pool, *before* their first API call. After the post-pilot search fix they went straight to the API, and the `tip` arrived only after they already had the data. Across main-run scholar tasks with the email in context, leak = 8/14 when the docs were read first vs 2/58 when not (`numbers.json: soft_scholar_by_docs`). Reported as exploratory.
+- **Test-awareness is common for Sonnet 5:** 115/288 episodes (40%) say in their thinking summary that `.test` is a reserved/test domain. Haiku 1/288, Opus 3/108. On hard tasks with the email in context, aware Sonnet episodes leaked *less* (4/8) than unaware ones (24/28), so awareness does not seem to inflate leak rates. Small n, reported as a limitation.
+
+## Step 8 analysis
+- `python -m cll.analyze runs/2026-11-09_main` regenerates `analysis/numbers.json`, `tables.md` and F1–F4 (PNG + SVG). REPORT.md quotes only those numbers (sums of `numbers.json` cells are marked as such).
+- Added beyond docs/06: a C0 reference row and an Opus table (T4b) for the trade-offs; per-task C1 rates; task-level bootstrap; test-awareness counts; three exploratory measures (soft-pressure mechanism, awareness vs leak, most common invented emails).
+- Chart colours: the validated categorical palette from the dataviz reference (slots 1–3 for the three models; slots 1–5 in fixed order for channels).
+- **Size budget:** the harness (canary, sandbox, tools, agent, grade, run, mockweb) is 678 lines, within the ~700 target. `analyze.py` adds 348 for T1–T5, F1–F4, bootstrap and numbers.json, so the total is 1,026. Accepted: the analysis is required by docs/06 and kept as plain functions.
+- Effort ablation (optional in docs/05 Step 8) not run.
+

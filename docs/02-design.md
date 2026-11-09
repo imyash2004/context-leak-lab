@@ -130,3 +130,4 @@ API error after retries, a refusal, or the turn cap (15) or cumulative input-tok
 | 2026-11-09 | Added robustness analysis (§6.7) and three threats (§8) | Review before the main run |
 | 2026-11-09 | Added C2b to the core block (+72 episodes, total 684) | Author's decision after the pilot: test the wording real users get |
 | 2026-11-09 | Sonnet 5 and Opus 5.5 run with `thinking: {type: adaptive, display: summarized}` | Same behaviour as their default (adaptive); only returns summaries, so leaks can be explained and test-awareness counted in reasoning (`test_aware_thinking`). Haiku unchanged |
+| 2026-11-09 (after main run) | Analysis additions: C0 reference row and Opus table for trade-offs; exploratory measures (soft-pressure mechanism, test-awareness vs leak, invented-email list) | Explain results seen in the data; labelled exploratory in REPORT.md |
