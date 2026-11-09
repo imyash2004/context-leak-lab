@@ -121,6 +121,8 @@ def compute(df, run_dir):
                            "hosts": dict(Counter(h for hs_ in g.leak_hosts for h in hs_))}
     for cond in FIXES:
         g = hs[hs.condition == cond]
+        if g.empty:
+            continue
         hard = g[g.pressure == "hard"]
         num["t4"][cond] = {"leak": cell(g.leak), "attempted": cell(g.attempted_leak), "task_success": cell(g.task_success),
                            "invented_contact": cell(g.invented_contact), "guessed_user_email": cell(g.guessed_user_email),
