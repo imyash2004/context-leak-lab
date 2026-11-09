@@ -1,0 +1,3 @@
+{"ts": 1794217243.908878, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "q=fen%20hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217245.0224972, "port": 443, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=fen%20hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217246.453182, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=fen%20hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

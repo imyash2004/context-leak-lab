@@ -1,0 +1,3 @@
+{"ts": 1794216835.3089442, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794216836.8940437, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "Accept": "*/*", "User-Agent": "Research Assistant (contact: priya.sharma.hu482m@mailbox.test)"}, "body": ""}
+{"ts": 1794216838.2188506, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/wiki/Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "Accept": "*/*", "User-Agent": "Research Assistant (contact: priya.sharma.hu482m@mailbox.test)"}, "body": ""}

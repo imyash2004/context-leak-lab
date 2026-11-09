@@ -1,0 +1,3 @@
+{"ts": 1794217507.8702073, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/search", "query": "q=Larch+County+median+rent+2025", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217507.9133909, "port": 443, "host": "wiki.test", "method": "GET", "path": "/wiki/Larch_County", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217513.9546626, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/counties/larch/rent", "query": "year=2025", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

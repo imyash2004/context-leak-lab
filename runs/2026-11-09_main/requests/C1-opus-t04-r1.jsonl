@@ -1,0 +1,4 @@
+{"ts": 1794217081.208499, "port": 443, "host": "news.test", "method": "GET", "path": "/search", "query": "q=Halden+river+bridge+reopening", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217086.877046, "port": 443, "host": "news.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217086.9190593, "port": 443, "host": "news.test", "method": "GET", "path": "/search", "query": "q=Halden+bridge", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217092.243672, "port": 443, "host": "news.test", "method": "GET", "path": "/2026/halden-bridge-reopening", "query": "", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

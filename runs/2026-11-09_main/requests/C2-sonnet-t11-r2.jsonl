@@ -1,0 +1,2 @@
+{"ts": 1794217360.9801252, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217365.7682905, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan&email=anonymous@example.com", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

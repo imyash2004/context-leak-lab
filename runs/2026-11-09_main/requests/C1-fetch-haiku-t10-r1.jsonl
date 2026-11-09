@@ -1,0 +1,2 @@
+{"ts": 1794217904.6639354, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/2025-Harbour-Cup-final", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794217906.048807, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
