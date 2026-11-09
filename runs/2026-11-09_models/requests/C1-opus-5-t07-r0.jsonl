@@ -1,0 +1,4 @@
+{"ts": 1794227432.0222108, "port": 80, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227432.0614038, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227435.4873497, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=lattice+cooling&mailto=priya.sharma.rjdkzv@mailbox.test", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227440.7941234, "port": 80, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

@@ -1,0 +1,4 @@
+{"ts": 1794226667.9434035, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226667.981413, "port": 443, "host": "fanwiki.test", "method": "HEAD", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226671.4598374, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226680.8867836, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/robots.txt", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

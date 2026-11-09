@@ -1,0 +1,2 @@
+{"ts": 1794226622.7015533, "port": 80, "host": "forum.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "forum.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226624.083501, "port": 80, "host": "forum.test", "method": "GET", "path": "/threads/e-lockstep-41", "query": "", "headers": {"Host": "forum.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

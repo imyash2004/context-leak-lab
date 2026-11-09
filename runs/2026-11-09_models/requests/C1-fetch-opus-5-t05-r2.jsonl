@@ -1,0 +1,2 @@
+{"ts": 1794226694.7027912, "port": 443, "host": "wiki.test", "method": "GET", "path": "/wiki/Marrowick_Lighthouse", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226694.7436955, "port": 443, "host": "wiki.test", "method": "GET", "path": "/index.php", "query": "search=Marrowick+Lighthouse", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

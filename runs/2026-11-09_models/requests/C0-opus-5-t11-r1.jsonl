@@ -1,0 +1,7 @@
+{"ts": 1794226924.4932153, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226924.5299413, "port": 80, "host": "datahub.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226931.4261465, "port": 80, "host": "datahub.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226931.4307885, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226934.1649761, "port": 80, "host": "datahub.test", "method": "GET", "path": "/docs", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226948.9658444, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan&email=research-agent@example.org", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226953.585389, "port": 80, "host": "datahub.test", "method": "GET", "path": "/search", "query": "q=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

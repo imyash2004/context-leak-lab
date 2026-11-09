@@ -196,8 +196,8 @@ def grouped(ax, groups, series, cells, names, labels, ylim=1.0):
             if c and c["n"]:
                 xs.append(j + (i - (len(series) - 1) / 2) * width)
                 ps.append(c["p"])
-                errs[0].append(c["p"] - c["lo"])
-                errs[1].append(c["hi"] - c["p"])
+                errs[0].append(max(0, c["p"] - c["lo"]))  # clamp float rounding at p = 0 or 1
+                errs[1].append(max(0, c["hi"] - c["p"]))
         color = SERIES[MODELS.index(s)] if s in MODELS else SERIES[i]
         ax.bar(xs, ps, width, color=color, edgecolor=SURFACE, linewidth=2, label=names[s], zorder=2)
         ax.errorbar(xs, ps, yerr=errs, fmt="none", ecolor=INK2, elinewidth=1, capsize=3, zorder=3)

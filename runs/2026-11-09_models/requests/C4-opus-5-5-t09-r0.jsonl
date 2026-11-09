@@ -1,0 +1,2 @@
+{"ts": 1794227338.5298448, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/Brightwater_Rovers", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227340.904841, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

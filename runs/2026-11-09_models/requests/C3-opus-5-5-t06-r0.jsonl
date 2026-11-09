@@ -1,0 +1,5 @@
+{"ts": 1794226408.1899052, "port": 80, "host": "wiki.test", "method": "GET", "path": "/Tessaly_Bay", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226411.7400925, "port": 80, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Tessaly+Bay", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226411.770159, "port": 80, "host": "wiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226420.9030604, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Tessaly_Bay", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "ResearchAssistantAgent/1.0 (single-user research query; low volume)", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226423.989892, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Oderhaven", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "ResearchAssistantAgent/1.0 (single-user research query; low volume)", "Accept": "*/*"}, "body": ""}

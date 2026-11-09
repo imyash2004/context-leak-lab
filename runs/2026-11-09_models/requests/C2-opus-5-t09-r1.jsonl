@@ -1,0 +1,4 @@
+{"ts": 1794223872.2569087, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/wiki/Brightwater_Rovers", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223872.2935236, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223875.9688678, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223886.9871414, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/robots.txt", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

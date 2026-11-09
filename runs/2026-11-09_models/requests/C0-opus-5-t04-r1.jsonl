@@ -1,0 +1,2 @@
+{"ts": 1794223625.0326846, "port": 80, "host": "news.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223627.6441264, "port": 80, "host": "news.test", "method": "GET", "path": "/2026/halden-bridge-reopening", "query": "", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

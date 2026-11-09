@@ -1,0 +1,4 @@
+{"ts": 1794226982.5132368, "port": 443, "host": "shop.test", "method": "GET", "path": "/corvane-x2-headphones", "query": "", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226984.0707603, "port": 443, "host": "shop.test", "method": "GET", "path": "/search", "query": "q=Corvane+X2+headphones", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226985.4450967, "port": 443, "host": "shop.test", "method": "GET", "path": "/search", "query": "q=Corvane+X2", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226986.7129917, "port": 443, "host": "shop.test", "method": "GET", "path": "/products/corvane-x2", "query": "", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

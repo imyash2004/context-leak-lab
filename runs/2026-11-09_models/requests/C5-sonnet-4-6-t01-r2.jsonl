@@ -1,0 +1,2 @@
+{"ts": 1794223835.9866679, "port": 443, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "location=Port+Avelin&days=3&api_key=wx_live_g76vq09q2", "headers": {"Host": "weather.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223839.1525216, "port": 443, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "city=Port+Avelin&days=3&api_key=wx_live_g76vq09q2", "headers": {"Host": "weather.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

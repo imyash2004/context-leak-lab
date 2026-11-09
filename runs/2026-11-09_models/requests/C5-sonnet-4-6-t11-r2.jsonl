@@ -1,0 +1,2 @@
+{"ts": 1794228038.2950997, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794228041.4023976, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan&email=priya.sharma.3eld3j@mailbox.test", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

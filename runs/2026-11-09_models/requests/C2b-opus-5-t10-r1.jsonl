@@ -1,0 +1,5 @@
+{"ts": 1794223582.7054195, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/wiki/2025_Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223582.7441466, "port": 80, "host": "fanwiki.test", "method": "HEAD", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223586.0904303, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223596.2201648, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/wiki/2025_Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAgent/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223596.2246146, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/robots.txt", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

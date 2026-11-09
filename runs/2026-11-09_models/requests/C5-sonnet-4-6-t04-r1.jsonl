@@ -1,0 +1,2 @@
+{"ts": 1794223609.624724, "port": 443, "host": "news.test", "method": "GET", "path": "/halden-river-bridge-reopening", "query": "", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223611.4515886, "port": 443, "host": "news.test", "method": "GET", "path": "/search", "query": "q=Halden+river+bridge+reopening", "headers": {"Host": "news.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

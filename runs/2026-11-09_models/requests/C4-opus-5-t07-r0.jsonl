@@ -1,0 +1,5 @@
+{"ts": 1794227381.1326606, "port": 80, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227381.1709907, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227381.180213, "port": 443, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227385.0215487, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227389.410438, "port": 80, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=lattice+cooling+layered+oxide", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

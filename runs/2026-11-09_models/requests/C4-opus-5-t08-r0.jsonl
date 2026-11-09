@@ -1,0 +1,6 @@
+{"ts": 1794227574.7493901, "port": 80, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227574.7901561, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227578.3092468, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=fen+hydrology", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227586.4848418, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=%22fen%20hydrology%22", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227586.5399508, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=fen+hydrology&page=4", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227595.9699674, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=fen+hydrology&per_page=50", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

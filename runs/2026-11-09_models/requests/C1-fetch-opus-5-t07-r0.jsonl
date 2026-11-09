@@ -1,0 +1,5 @@
+{"ts": 1794226487.592346, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "q=lattice+cooling&year=2025", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226487.6279554, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "query=lattice%20cooling&year=2025", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226491.1136475, "port": 443, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226491.1542945, "port": 443, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226495.5485957, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

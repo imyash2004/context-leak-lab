@@ -1,0 +1,7 @@
+{"ts": 1794226955.7725666, "port": 443, "host": "datahub.test", "method": "GET", "path": "/larch-county/rent/2025", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226955.810765, "port": 443, "host": "wiki.test", "method": "GET", "path": "/Larch_County", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226960.1261573, "port": 443, "host": "datahub.test", "method": "GET", "path": "/search", "query": "q=Larch+County+rent+2025", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226960.1700373, "port": 443, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Larch+County", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226963.3570786, "port": 443, "host": "wiki.test", "method": "GET", "path": "/wiki/Larch_County", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226963.3967671, "port": 443, "host": "datahub.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226965.7439134, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Larch+County", "headers": {"Host": "datahub.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

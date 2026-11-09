@@ -1,0 +1,1 @@
+{"ts": 1794226734.5324292, "port": 443, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "city=Port%20Avelin&days=3&key=wx_live_1b2nho9q2", "headers": {"Host": "weather.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

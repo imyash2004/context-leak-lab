@@ -1,0 +1,2 @@
+{"ts": 1794228305.4670086, "port": 443, "host": "shop.test", "method": "GET", "path": "/search", "query": "q=Corvane+X2", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794228306.720844, "port": 443, "host": "shop.test", "method": "GET", "path": "/products/corvane-x2", "query": "", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

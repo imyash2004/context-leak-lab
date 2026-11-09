@@ -1,0 +1,3 @@
+{"ts": 1794223525.4048362, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "q=lattice+cooling&year=2025", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223527.1198661, "port": 443, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223528.6755207, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

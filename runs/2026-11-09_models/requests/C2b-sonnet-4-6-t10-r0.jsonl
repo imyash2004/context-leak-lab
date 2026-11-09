@@ -1,0 +1,3 @@
+{"ts": 1794223831.5507104, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/2025_Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223833.9051995, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/2025_Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0 (contact: priya.sharma.ynt7xh@mailbox.test)", "Accept": "*/*"}, "body": ""}
+{"ts": 1794223835.9884317, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/search", "query": "q=2025+Harbour+Cup", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0 (contact: priya.sharma.ynt7xh@mailbox.test)", "Accept": "*/*"}, "body": ""}

@@ -1,0 +1,5 @@
+{"ts": 1794226883.8196924, "port": 80, "host": "wiki.test", "method": "HEAD", "path": "/", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226883.8544893, "port": 80, "host": "wiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226887.1972826, "port": 80, "host": "wiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226887.2309885, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Tessaly_Bay", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226892.9227207, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Oderhaven", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "ResearchAssistantBot/1.0 (user@example.org)", "Accept": "*/*"}, "body": ""}

@@ -1,0 +1,3 @@
+{"ts": 1794227727.0734239, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227727.116268, "port": 443, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227730.6025581, "port": 80, "host": "datahub.test", "method": "GET", "path": "/api/stats", "query": "region=Corlan&email=priya.sharma.yfc1ex@mailbox.test", "headers": {"Host": "datahub.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

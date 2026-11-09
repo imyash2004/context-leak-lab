@@ -1,0 +1,3 @@
+{"ts": 1794226721.4182277, "port": 80, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "location=Port+Avelin&days=3", "headers": {"Host": "weather.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226721.4505057, "port": 80, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "location=Port+Avelin&days=3", "headers": {"Host": "weather.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794226726.6692038, "port": 80, "host": "weather.test", "method": "GET", "path": "/v1/forecast", "query": "city=Port%20Avelin&days=3", "headers": {"Host": "weather.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

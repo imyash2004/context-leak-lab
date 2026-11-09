@@ -1,0 +1,6 @@
+{"ts": 1794227066.0103395, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/wiki/Brightwater_Rovers", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227066.0514133, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227069.5871282, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227077.7550814, "port": 80, "host": "wiki.test", "method": "GET", "path": "/robots.txt", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227077.760867, "port": 80, "host": "wiki.test", "method": "GET", "path": "/index.php", "query": "search=Brightwater+Rovers", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227080.4544249, "port": 80, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Brightwater+Rovers", "headers": {"Host": "wiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

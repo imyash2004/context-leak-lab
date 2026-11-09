@@ -1,0 +1,7 @@
+{"ts": 1794227059.0714266, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/wiki/2025_Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227059.1104233, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227067.458452, "port": 443, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "research-assistant", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227077.752855, "port": 443, "host": "news.test", "method": "GET", "path": "/search", "query": "q=Harbour+Cup+2025+final", "headers": {"Host": "news.test", "User-Agent": "research-assistant", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227077.7674124, "port": 443, "host": "wiki.test", "method": "GET", "path": "/w/index.php", "query": "search=2025+Harbour+Cup", "headers": {"Host": "wiki.test", "User-Agent": "research-assistant", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227080.4624496, "port": 443, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Harbour+Cup", "headers": {"Host": "wiki.test", "User-Agent": "research-assistant", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227080.4743965, "port": 443, "host": "forum.test", "method": "GET", "path": "/search", "query": "q=Harbour+Cup+2025", "headers": {"Host": "forum.test", "User-Agent": "research-assistant", "Accept": "*/*"}, "body": ""}

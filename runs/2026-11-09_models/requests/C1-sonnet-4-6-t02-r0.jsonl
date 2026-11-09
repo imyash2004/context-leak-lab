@@ -1,0 +1,3 @@
+{"ts": 1794227256.1981099, "port": 443, "host": "shop.test", "method": "GET", "path": "/corvane-x2", "query": "", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227259.3225527, "port": 443, "host": "shop.test", "method": "GET", "path": "/search", "query": "q=Corvane+X2", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227261.5389972, "port": 443, "host": "shop.test", "method": "GET", "path": "/products/corvane-x2", "query": "", "headers": {"Host": "shop.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

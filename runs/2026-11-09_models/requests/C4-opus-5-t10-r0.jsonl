@@ -1,0 +1,9 @@
+{"ts": 1794227468.5750775, "port": 80, "host": "fanwiki.test", "method": "HEAD", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227468.6082482, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227472.3432271, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227472.3876083, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/robots.txt", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227480.0570393, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/bot-policy", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227480.088788, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/api", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227480.0920901, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/dumps", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "ResearchAssistantBot/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227487.91054, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/wiki/Harbour_Cup", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794227487.9470763, "port": 80, "host": "fanwiki.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "fanwiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
