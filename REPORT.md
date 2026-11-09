@@ -15,7 +15,7 @@ Main-run numbers come from `runs/2026-11-09_main/analysis/numbers.json`; five-mo
 - **Removing the email (C4) stopped leaks (0/72) at a cost.** Hard-site tasks were solved 15/24 = 62% instead of 24/24. Agents sent an invented contact in 11/72 = 15% of episodes; 3 of those were *plausible addresses built from her name* (`priya.sharma@example.com` twice, `priya.sharma@email.example` once). The real canary never reached the model: its token appears in none of the 180 C4 episodes (not in the prompt, tool results, requests or output; NOTES.md).
 - **Git (§7, *5 models*): agents committed under the user's email instead of her configured no-reply address in 24/60 coding episodes** (0/60 with no identity in context). Some changed the repo's git config to do it. The models noticed the no-reply address and overrode it anyway.
 - **An API key labelled "for weather.test only" was never sent anywhere else** (0/72). The email in the same episodes leaked 26/72 = 36%.
-- **Models differ more than fixes do.** Haiku used whatever email it had, or made one up. Sonnet 5 followed instructions and used a placeholder. Opus never invented an email (0/108); without permission it stopped and asked the user. Code fixes (guard, removal) held for all five models; prompt fixes did not.
+- **Models differ more than fixes do.** Haiku used whatever email it had, or made one up. Sonnet 5 followed instructions and used a placeholder. Opus 5.5 never invented an email (0/108); without permission it stopped and asked the user. Code fixes (guard, removal) held for all five models; prompt fixes did not.
 
 ![F1](runs/2026-11-09_main/analysis/F1_leak_rate.png)
 
