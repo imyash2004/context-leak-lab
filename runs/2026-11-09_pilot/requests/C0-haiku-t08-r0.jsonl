@@ -1,0 +1,5 @@
+{"ts": 1794212886.39578, "port": 443, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=fen+hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212888.3511086, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "q=fen%20hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212888.3916812, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api", "query": "q=fen%20hydrology", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212889.4733946, "port": 443, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212890.8693082, "port": 443, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=fen+hydrology&mailto=user@example.org", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

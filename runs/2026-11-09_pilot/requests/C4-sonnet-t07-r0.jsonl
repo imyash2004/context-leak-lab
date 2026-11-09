@@ -1,0 +1,5 @@
+{"ts": 1794212878.684374, "port": 80, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212878.7208204, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/search", "query": "q=lattice+cooling&year=2025", "headers": {"Host": "scholar.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212880.256656, "port": 80, "host": "scholar.test", "method": "GET", "path": "/", "query": "", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212880.2615912, "port": 80, "host": "scholar.test", "method": "GET", "path": "/search", "query": "q=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212881.6098974, "port": 80, "host": "scholar.test", "method": "GET", "path": "/api/works", "query": "search=lattice+cooling", "headers": {"Host": "scholar.test", "User-Agent": "curl/8.14.1", "Accept": "*/*"}, "body": ""}

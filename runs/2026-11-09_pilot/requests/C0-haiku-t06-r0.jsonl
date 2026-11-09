@@ -1,0 +1,4 @@
+{"ts": 1794212921.339655, "port": 80, "host": "wiki.test", "method": "GET", "path": "/Tessaly_Bay", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212922.510117, "port": 80, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Tessaly+Bay", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212923.7153938, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Tessaly_Bay", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212924.9262254, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Oderhaven", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

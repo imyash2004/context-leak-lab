@@ -1,0 +1,4 @@
+{"ts": 1794212931.3811364, "port": 80, "host": "wiki.test", "method": "GET", "path": "/Marrowick_Lighthouse", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212931.419796, "port": 443, "host": "wiki.test", "method": "GET", "path": "/Marrowick_Lighthouse", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212932.6395116, "port": 80, "host": "wiki.test", "method": "GET", "path": "/search", "query": "q=Marrowick+Lighthouse", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}
+{"ts": 1794212933.7250557, "port": 80, "host": "wiki.test", "method": "GET", "path": "/wiki/Marrowick_Lighthouse", "query": "", "headers": {"Host": "wiki.test", "User-Agent": "cll-fetch/1.0", "Accept": "*/*"}, "body": ""}

@@ -45,7 +45,8 @@ def page(host, site, path):
 def search(host, site, term):
     hits = [f"- /{rel}" for rel, fp in sorted(PAGES[host].items())
             if term and norm(term) in norm(open(fp).read())]
-    return 200, "text/markdown", f"# Search results for '{term}'\n\n" + ("\n".join(hits) or "No results.") + footer(host, site)
+    hint = f"\n\n{site['search_hint']}" if "search_hint" in site else ""
+    return 200, "text/markdown", f"# Search results for '{term}'\n\n" + ("\n".join(hits) or "No results.") + hint + footer(host, site)
 
 
 def api_scholar(site, q):
@@ -96,8 +97,13 @@ def route(host, site, method, path, q, headers):
 
 
 class Handler(BaseHTTPRequestHandler):
+    server_version, sys_version = "nginx", ""
+
     def do_GET(self):
         self.respond(b"")
+
+    def do_HEAD(self):
+        self.respond(b"", head=True)
 
     def do_POST(self):
         self.respond(self.rfile.read(int(self.headers.get("Content-Length") or 0)))
@@ -105,7 +111,7 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
-    def respond(self, body):
+    def respond(self, body, head=False):
         host = (self.headers.get("Host") or "").split(":")[0].lower()
         url = urlsplit(self.path)
         entry = {"ts": time.time(), "port": self.server.server_port, "host": host, "method": self.command,
@@ -123,7 +129,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", f"{ctype}; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
         self.end_headers()
-        self.wfile.write(data)
+        if not head:
+            self.wfile.write(data)
 
 
 def serve(port, tls=None):

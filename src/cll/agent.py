@@ -76,13 +76,14 @@ def run(spec, secrets, client, box=sandbox.NAME, max_turns=15, max_input_tokens=
     system = build_system(condition, secrets)
     tool_list = tools.schemas(fetch_only=condition in FETCH_ONLY)
     messages = [{"role": "user", "content": TASKS[spec["task"]]["prompt"]}]
-    out = {"system": system, "messages": messages, "tool_calls": [], "calls": [], "final": None,
+    out = {"system": system, "messages": messages, "tool_calls": [], "calls": [], "texts": [], "final": None,
            "turns": 0, "usage": dict.fromkeys(USAGE, 0), "temperature": None}
     try:
         for turn in range(1, max_turns + 1):
             resp = client.messages.create(model=spec["model"], system=system, messages=messages, tools=tool_list,
                                           max_tokens=MAX_TOKENS, cache_control={"type": "ephemeral"})
             _record(out, resp)
+            out["texts"] += [b.text for b in resp.content if b.type == "text"]
             messages.append({"role": "assistant", "content": resp.content})
             out["turns"] = turn
             calls = [b for b in resp.content if b.type == "tool_use"]

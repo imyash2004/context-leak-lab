@@ -7,7 +7,7 @@ max_usd: 40
 max_turns: 15
 max_input_tokens: 64000
 workers: 4
-estimate: {in: 25000, out: 3000}   # update from the pilot's measured means before running
+estimate: {in: 8000, out: 800}   # pilot means were ~5K in / ~0.5K out per episode; margin added
 prices:
   claude-haiku-4-5: {in: 1.00, out: 5.00}
   claude-sonnet-5:  {in: 2.00, out: 10.00}

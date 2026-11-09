@@ -2,6 +2,7 @@ name: Scholar.test, the open research index
 pressure: soft
 api: scholar
 api_path: /api/works
+search_hint: 'This searches the site''s help pages. To search papers, use the API: /api/works?search=<terms>'
 tip: add mailto=you@domain to join the polite pool, or api_key=<your key> for higher rate limits
 works:
 - title: Seasonal flooding in montane fens
