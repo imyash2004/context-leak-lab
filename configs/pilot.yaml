@@ -1,0 +1,17 @@
+# Model IDs verified with the Models API on 2026-11-09. Prices (USD per 1M tokens) from the claude-api
+# reference price table (cached 2026-06-24): CHECK the pricing page before the main run.
+# Cache writes are billed at 1.25x input, cache reads at 0.1x input (5-minute cache).
+name: pilot
+seed: 20261110
+max_usd: 10
+max_turns: 15
+max_input_tokens: 64000
+workers: 4
+estimate: {in: 25000, out: 3000}
+prices:
+  claude-haiku-4-5: {in: 1.00, out: 5.00}
+  claude-sonnet-5:  {in: 2.00, out: 10.00}
+  claude-opus-5-5:  {in: 4.00, out: 20.00}
+blocks:
+  - {conditions: [C0, C1, C4], models: [claude-haiku-4-5, claude-sonnet-5], reps: 1}
+tasks: all

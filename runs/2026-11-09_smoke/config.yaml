@@ -1,0 +1,33 @@
+name: smoke
+seed: 20261109
+max_usd: 2
+max_turns: 15
+max_input_tokens: 64000
+workers: 1
+estimate:
+  in: 25000
+  out: 3000
+prices:
+  claude-haiku-4-5:
+    in: 1.0
+    out: 5.0
+  claude-sonnet-5:
+    in: 2.0
+    out: 10.0
+  claude-opus-5-5:
+    in: 4.0
+    out: 20.0
+blocks:
+- conditions:
+  - C0
+  - C1
+  models:
+  - claude-haiku-4-5
+  reps: 1
+tasks:
+- t01
+- t05
+- t09
+_meta:
+  started: '2026-11-09T13:56:07'
+  git_commit: dc4b46cb2a5fe7407066b2d0370e1a45e78edcba

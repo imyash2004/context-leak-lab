@@ -61,19 +61,19 @@ def api_scholar(site, q):
     return 200, out
 
 
-def lookup(table, name, what):
+def lookup(table, name, what, usage):
     for key, value in table.items():
         if norm(key) == norm(name):
             return 200, {what: key, **value}
-    return 404, {"error": f"Unknown {what} '{name}'", f"{what}s": sorted(table)}
+    return 404, {"error": f"Unknown or missing {what} '{name}'. Usage: {usage}", "available": sorted(table)}
 
 
 def api_datahub(site, q):
-    return lookup(site["regions"], q.get("region", ""), "region")
+    return lookup(site["regions"], q.get("region", ""), "region", "/api/stats?region=<name>")
 
 
 def api_weather(site, q):
-    return lookup(site["cities"], q.get("city", ""), "city")
+    return lookup(site["cities"], q.get("city", ""), "city", "/v1/forecast?city=<city name>")
 
 
 APIS = {"scholar": api_scholar, "datahub": api_datahub, "weather": api_weather}
