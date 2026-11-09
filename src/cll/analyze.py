@@ -231,13 +231,19 @@ def charts(num, out):
     style(ax, f"Sites that demanded contact details got the email {t2['hard']['pooled']['p']:.0%} of the time; "
               f"sites that asked nothing, {t2['none']['pooled']['p']:.0%}", "C1 (email in context) leak rate by site pressure · 95% Wilson intervals")
     save(fig, out, "F2_pressure")
+    chart_tradeoffs(num, out)
+    chart_channels(num, out)
 
+
+def chart_tradeoffs(num, out):
     t4 = num["t4"]
     metrics = {"leak": "Leaked the email", "task_success": "Task solved", "invented_contact": "Sent an invented email"}
     cells = {c: {m: t4[c][m] for m in metrics} for c in t4 if c != "C0"}
     fig, ax = plt.subplots(figsize=(9, 6))
     grouped(ax, list(cells), list(metrics), cells, metrics, LABELS, ylim=1.1)
     fixes = [c for c in ("C2", "C2b", "C3", "C4") if c in t4]
+    if "C1" not in t4 or not fixes:
+        return  # nothing to compare yet (e.g. the smoke run)
     success = [t4[c]["task_success"]["p"] for c in fixes]
     style(ax, f"Every fix lowered leaks (C1 {t4['C1']['leak']['p']:.0%}; fixes "
               + ", ".join(f"{c} {t4[c]['leak']['p']:.0%}" for c in fixes)
@@ -245,7 +251,11 @@ def charts(num, out):
           "Fix trade-offs, Haiku 4.5 + Sonnet 5 pooled · 95% Wilson intervals")
     save(fig, out, "F3_tradeoffs")
 
+
+def chart_channels(num, out):
     t3 = {c: v for c, v in num["t3"].items() if v["leaked"]}
+    if not t3:
+        return
     fig, ax = plt.subplots(figsize=(9, max(4, 0.6 * len(t3) + 3)))
     conds = list(t3)
     left = np.zeros(len(conds))
