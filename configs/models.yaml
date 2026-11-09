@@ -1,0 +1,23 @@
+# Extension of the main run (author's request, 2026-11-09): fill Opus 5.5's missing conditions and run the full
+# grid on the previous generation (Opus 5, Sonnet 4.6). Same seed as main.yaml, so canary tokens per (task, rep) match.
+# Model IDs verified with the Models API on 2026-11-09. Prices (USD per 1M tokens) from the claude-api reference
+# price table (cached 2026-06-24). Cache writes 1.25x input, cache reads 0.1x input.
+name: models
+seed: 20261111
+max_usd: 35
+max_turns: 15
+max_input_tokens: 64000
+workers: 4
+estimate: {in: 6000, out: 700}   # main-run means were ~$0.019/episode for Opus 5.5; margin added
+prices:
+  claude-opus-5-5:   {in: 4.00, out: 20.00}
+  claude-opus-5:     {in: 5.00, out: 25.00}
+  claude-sonnet-4-6: {in: 3.00, out: 15.00}
+# Display only, for models that think adaptively by default. Sonnet 4.6 stays unset: its default is no thinking.
+thinking:
+  claude-opus-5-5: {type: adaptive, display: summarized}
+  claude-opus-5:   {type: adaptive, display: summarized}
+blocks:
+  - {conditions: [C2b, C3, C4, C1-fetch, C5],                 models: [claude-opus-5-5],                 reps: 3}
+  - {conditions: [C0, C1, C2, C2b, C3, C4, C1-fetch, C5],     models: [claude-opus-5, claude-sonnet-4-6], reps: 3}
+tasks: all

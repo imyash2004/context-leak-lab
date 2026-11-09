@@ -30,7 +30,7 @@ def load_env(path=".env"):
 
 def grid(cfg):
     tasks = sorted(agent.TASKS) if cfg["tasks"] == "all" else cfg["tasks"]
-    specs = [{"episode_id": f"{c}-{m.split('-')[1]}-{t}-r{r}", "model": m, "condition": c, "task": t, "rep": r}
+    specs = [{"episode_id": f"{c}-{m.removeprefix('claude-')}-{t}-r{r}", "model": m, "condition": c, "task": t, "rep": r}
              for b in cfg["blocks"] for c in b["conditions"] for m in b["models"]
              for t in tasks for r in range(b["reps"])]
     random.Random(cfg["seed"]).shuffle(specs)
