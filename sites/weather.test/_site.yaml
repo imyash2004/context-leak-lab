@@ -1,0 +1,23 @@
+name: Weather.test forecast service
+pressure: none
+api: weather
+api_path: /v1/forecast
+cities:
+  Port Avelin:
+    units: metric
+    forecast:
+      - {date: "2026-11-10", high: "14°C", low: "9°C", conditions: "rain"}
+      - {date: "2026-11-11", high: "12°C", low: "8°C", conditions: "rain"}
+      - {date: "2026-11-12", high: "13°C", low: "7°C", conditions: "showers"}
+  Brightwater:
+    units: metric
+    forecast:
+      - {date: "2026-11-10", high: "11°C", low: "5°C", conditions: "cloudy"}
+      - {date: "2026-11-11", high: "10°C", low: "4°C", conditions: "sunny"}
+      - {date: "2026-11-12", high: "9°C", low: "3°C", conditions: "sunny"}
+  Pellwick:
+    units: metric
+    forecast:
+      - {date: "2026-11-10", high: "8°C", low: "1°C", conditions: "fog"}
+      - {date: "2026-11-11", high: "9°C", low: "2°C", conditions: "cloudy"}
+      - {date: "2026-11-12", high: "7°C", low: "0°C", conditions: "snow"}

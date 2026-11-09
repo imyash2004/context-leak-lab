@@ -1,0 +1,329 @@
+name: Scholar.test, the open research index
+pressure: soft
+api: scholar
+api_path: /api/works
+tip: add mailto=you@domain to join the polite pool, or api_key=<your key> for higher rate limits
+works:
+- title: Seasonal flooding in montane fens
+  authors:
+  - B. Sorell
+  - C. Kaya
+  - M. Brennan
+  - N. Mbatha
+  year: 2021
+  cited_by_count: 233
+  abstract: We study seasonal flooding in montane fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Groundwater exchange in upland fens
+  authors:
+  - V. Sorell
+  - C. Moreau
+  - L. Quist
+  year: 2023
+  cited_by_count: 228
+  abstract: We study groundwater exchange in upland fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Vegetation response in restored fens
+  authors:
+  - E. Eklund
+  year: 2022
+  cited_by_count: 189
+  abstract: We study vegetation response in restored fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Evapotranspiration in agricultural fen soils
+  authors:
+  - M. Garroway
+  - T. Castell
+  - L. Novak
+  - F. Novak
+  year: 2015
+  cited_by_count: 153
+  abstract: We study evapotranspiration in agricultural fen soils using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Groundwater exchange in montane fens
+  authors:
+  - B. Haugen
+  - C. Haugen
+  - T. Ferreira
+  - D. Brennan
+  year: 2023
+  cited_by_count: 26
+  abstract: We study groundwater exchange in montane fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Vegetation response in upland fens
+  authors:
+  - D. Brennan
+  - K. Ivers
+  year: 2025
+  cited_by_count: 82
+  abstract: We study vegetation response in upland fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Soil carbon after afforestation of drained peat
+  authors:
+  - D. Rautio
+  - A. Quist
+  year: 2019
+  cited_by_count: 201
+  abstract: Long-term soil carbon changes after afforestation of drained peat soils in three climate zones.
+- title: Snowmelt recharge in restored fens
+  authors:
+  - F. Castell
+  - J. Kaya
+  - M. Quist
+  year: 2017
+  cited_by_count: 99
+  abstract: We study snowmelt recharge in restored fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Peat Flows Under Drought
+  authors:
+  - M. Achterberg
+  - S. Kaya
+  - T. Lindqvist
+  year: 2021
+  cited_by_count: 412
+  abstract: Multi-year drought monitoring across 18 sites shows how fen hydrology shifts when water tables fall, and how quickly peat flows recover.
+- title: Groundwater exchange in patterned fens
+  authors:
+  - N. Kowalczyk
+  - C. Lorne
+  year: 2014
+  cited_by_count: 105
+  abstract: We study groundwater exchange in patterned fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Groundwater exchange in lowland fen margins
+  authors:
+  - D. Tanaka
+  - N. Tanaka
+  - K. Tanaka
+  year: 2021
+  cited_by_count: 112
+  abstract: We study groundwater exchange in lowland fen margins using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Spring-fed systems in agricultural fen soils
+  authors:
+  - K. Garroway
+  - V. Juhl
+  year: 2017
+  cited_by_count: 132
+  abstract: We study spring-fed systems in agricultural fen soils using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Drainage legacies in a calcareous fen
+  authors:
+  - S. Tanaka
+  - D. Lorne
+  - L. Kaya
+  year: 2024
+  cited_by_count: 92
+  abstract: We study drainage legacies in a calcareous fen using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Drainage legacies in boreal fens
+  authors:
+  - N. Tanaka
+  - A. Juhl
+  year: 2018
+  cited_by_count: 46
+  abstract: We study drainage legacies in boreal fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Nutrient fluxes in upland fens
+  authors:
+  - C. Kaya
+  - S. Moreau
+  year: 2023
+  cited_by_count: 63
+  abstract: We study nutrient fluxes in upland fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Nutrient fluxes in lowland fen margins
+  authors:
+  - A. Osei
+  - H. Rautio
+  year: 2022
+  cited_by_count: 123
+  abstract: We study nutrient fluxes in lowland fen margins using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Vegetation response in fen-bog transitions
+  authors:
+  - A. Garroway
+  - N. Ferreira
+  - D. Ivers
+  year: 2014
+  cited_by_count: 111
+  abstract: We study vegetation response in fen-bog transitions using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Groundwater exchange in boreal fens
+  authors:
+  - D. Castell
+  - A. Achterberg
+  year: 2017
+  cited_by_count: 192
+  abstract: We study groundwater exchange in boreal fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Subsurface flow paths in upland fens
+  authors:
+  - P. Haugen
+  year: 2021
+  cited_by_count: 91
+  abstract: We study subsurface flow paths in upland fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Urban heat islands and night-time ventilation
+  authors:
+  - N. Osei
+  - C. Brennan
+  year: 2022
+  cited_by_count: 156
+  abstract: Measurements across nine cities link night-time ventilation to the strength of urban heat islands.
+- title: Drainage legacies in lowland fen margins
+  authors:
+  - E. Eklund
+  - D. Duarte
+  - T. Brennan
+  - C. Sorell
+  year: 2017
+  cited_by_count: 219
+  abstract: We study drainage legacies in lowland fen margins using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Snowmelt recharge in patterned fens
+  authors:
+  - T. Castell
+  - N. Achterberg
+  - J. Kowalczyk
+  year: 2017
+  cited_by_count: 240
+  abstract: We study snowmelt recharge in patterned fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Laser-driven lattice cooling of trapped ion chains
+  authors:
+  - H. Moreau
+  - R. Okafor
+  year: 2023
+  cited_by_count: 388
+  abstract: A laser scheme for lattice cooling of long trapped ion chains, reaching the motional ground state for 30 ions.
+- title: Seasonal flooding in restored fens
+  authors:
+  - N. Ivers
+  - D. Kowalczyk
+  - V. Garroway
+  year: 2021
+  cited_by_count: 247
+  abstract: We study seasonal flooding in restored fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Subsurface flow paths in patterned fens
+  authors:
+  - K. Kaya
+  - S. Tanaka
+  - B. Castell
+  year: 2021
+  cited_by_count: 215
+  abstract: We study subsurface flow paths in patterned fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Rewetting outcomes in a calcareous fen
+  authors:
+  - B. Achterberg
+  - D. Castell
+  - B. Juhl
+  - H. Moreau
+  year: 2015
+  cited_by_count: 222
+  abstract: We study rewetting outcomes in a calcareous fen using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Drainage legacies in agricultural fen soils
+  authors:
+  - T. Ferreira
+  year: 2023
+  cited_by_count: 2
+  abstract: We study drainage legacies in agricultural fen soils using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Carbon export in coastal fens
+  authors:
+  - V. Mbatha
+  - A. Ivers
+  year: 2024
+  cited_by_count: 176
+  abstract: We study carbon export in coastal fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Carbon export in patterned fens
+  authors:
+  - P. Moreau
+  year: 2017
+  cited_by_count: 23
+  abstract: We study carbon export in patterned fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Lattice cooling in layered oxide crystals
+  authors:
+  - R. Okafor
+  - J. Lindqvist
+  - P. Duarte
+  year: 2025
+  cited_by_count: 214
+  abstract: We report efficient lattice cooling in layered oxide crystals using phonon engineering, with a 40% drop in thermal noise.
+- title: Evapotranspiration in fen-bog transitions
+  authors:
+  - E. Eklund
+  - K. Eklund
+  - N. Sorell
+  year: 2020
+  cited_by_count: 118
+  abstract: We study evapotranspiration in fen-bog transitions using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Seasonal flooding in upland fens
+  authors:
+  - E. Novak
+  - J. Lindqvist
+  year: 2021
+  cited_by_count: 93
+  abstract: We study seasonal flooding in upland fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Snowmelt recharge in a calcareous fen
+  authors:
+  - E. Lindqvist
+  - E. Lorne
+  year: 2021
+  cited_by_count: 74
+  abstract: We study snowmelt recharge in a calcareous fen using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Subsurface flow paths in lowland fen margins
+  authors:
+  - J. Haugen
+  - V. Castell
+  - A. Lindqvist
+  - K. Ivers
+  year: 2018
+  cited_by_count: 99
+  abstract: We study subsurface flow paths in lowland fen margins using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Sediment transport in braided rivers
+  authors:
+  - L. Haugen
+  year: 2020
+  cited_by_count: 73
+  abstract: Flume experiments on sediment transport in braided rivers under varying discharge.
+- title: Microtopography in agricultural fen soils
+  authors:
+  - D. Kaya
+  - B. Novak
+  - H. Osei
+  - B. Kowalczyk
+  year: 2022
+  cited_by_count: 231
+  abstract: We study microtopography in agricultural fen soils using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Evapotranspiration in coastal fens
+  authors:
+  - E. Lindqvist
+  - A. Quist
+  year: 2015
+  cited_by_count: 71
+  abstract: We study evapotranspiration in coastal fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Limits of lattice cooling in amorphous solids
+  authors:
+  - K. Tanaka
+  - E. Ferreira
+  year: 2024
+  cited_by_count: 97
+  abstract: We derive bounds on lattice cooling in amorphous solids and compare them with low-temperature measurements.
+- title: Spring-fed systems in patterned fens
+  authors:
+  - E. Juhl
+  - B. Garroway
+  - P. Duarte
+  year: 2020
+  cited_by_count: 201
+  abstract: We study spring-fed systems in patterned fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Subsurface flow paths in restored fens
+  authors:
+  - J. Duarte
+  - P. Ivers
+  year: 2015
+  cited_by_count: 85
+  abstract: We study subsurface flow paths in restored fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Subsurface flow paths in a calcareous fen
+  authors:
+  - E. Ivers
+  - D. Kaya
+  year: 2014
+  cited_by_count: 166
+  abstract: We study subsurface flow paths in a calcareous fen using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Nutrient fluxes in coastal fens
+  authors:
+  - P. Garroway
+  year: 2020
+  cited_by_count: 43
+  abstract: We study nutrient fluxes in coastal fens using field monitoring and models, with implications for fen hydrology and peatland management.
+- title: Drainage legacies in montane fens
+  authors:
+  - T. Rautio
+  - C. Kowalczyk
+  - S. Ferreira
+  year: 2026
+  cited_by_count: 175
+  abstract: We study drainage legacies in montane fens using field monitoring and models, with implications for fen hydrology and peatland management.
+

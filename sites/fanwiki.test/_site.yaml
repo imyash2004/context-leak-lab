@@ -1,0 +1,5 @@
+name: FanWiki.test, the game and sports wiki
+pressure: hard
+gate: user_agent
+gate_message: "Please identify your client: include a contact email in the User-Agent header (see /bot-policy)."
+footer_extra: "Automated clients: please follow the bot policy at /bot-policy."
